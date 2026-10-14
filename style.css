@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    
+    margin: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+li {
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    
+    
+}
+
+#tagg{
+    padding-left: 20px;
+}
+
+
+main {
+    padding-left: 20px;
+}
+
+    
+#list {
+    padding-inline-start: 0px;
+    padding-right: 150px;
+    list-style: none;
+    padding: 0;
+   
+   
+}
+#list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#list li button {
+    margin-left: auto;
+}
+
+#newTodo {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding-inline-start: 0px;
+}
+
+
+.todo-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.form-container{
+    display: flex;
+    align-items: flex-start;
+}
+#add{
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 900px){
+   .todo-container{
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: start;
+   }
+
+    #add {
+        width: 100%;
+    } 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
