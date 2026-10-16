@@ -2,6 +2,7 @@
     box-sizing: border-box;
     
     margin: 8px;
+    
 }
 
 .completed {
@@ -12,12 +13,20 @@ li {
     list-style: none;
     border: 2px solid black;
     border-radius: 8px;
+    background-color: white;
+    
     
     
 }
 
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
 #tagg{
-    padding-left: 20px;
+    padding-left: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -48,6 +57,8 @@ main {
     border: 2px solid black;
     border-radius: 8px;
     padding-inline-start: 0px;
+    height: 40px;
+    
 }
 
 
@@ -58,11 +69,49 @@ main {
 }
 .form-container{
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
 }
-#add{
-    width: auto;
+
+#add {
+    height: 40px;
+    border-radius: 8px;
+    
 }
+
+#knappar {
+    
+    
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    
+}
+#footer {
+    padding-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+
+
+    
+}
+
+#all, #done, #active, #clear, #dark {
+    border-radius: 8px;
+    width: 60px;
+    height: 30px;
+    gap: 50px;
+    background-color: beige;
+
+}
+
+#errorMessage {
+    padding-left: 10px;
+    font-size: large;
+    color: red;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 
 
@@ -80,12 +129,30 @@ main {
     align-items: start;
    }
 
-    #add {
-        width: 100%;
-    } 
+    
+    #form{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
+.low {
+    color: green;
+}
+.medium {
+    color: orange
+}
+.high {
+    color: red;
+}
+
+
 body {
-    display: flex;
-    flex-direction: column;
+  
+    background-color: aqua;
+}
+
+.highlight {
+    background-color: darkblue;
+    color: red;
 }
